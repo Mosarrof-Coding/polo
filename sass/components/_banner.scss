@@ -1,0 +1,23 @@
+@import "../mixins/mixin";
+@import "../variable/variable";
+#banner{
+    background-image: url(../assets/images/bg-v4_new.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner_title{
+        max-width: 85%;
+        padding: 170px 0;
+        margin: auto;
+        text-align: center;
+        h1{
+            font-size: 74px;
+            line-height: 86px;
+            color:$white;
+        }
+        .banner_p{
+            font-size: 20px;
+            color:$white;
+        }
+    }
+}
