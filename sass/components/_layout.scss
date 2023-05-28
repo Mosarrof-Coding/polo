@@ -1,0 +1,32 @@
+@import "../mixins/mixin";
+@import "../variable/variable";
+#layout{
+    padding: 100px 0;
+    .layout_heading{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        h1{
+            @include h1;
+            color:$green;
+        }
+        p{
+            @include p;
+        }
+    }
+    .layout_gallery{
+        .layout_btn{
+
+        }
+        .layout_items{
+            img{
+
+            }
+            .layout_text{
+                padding: 20px 0;
+                text-align: center;
+            }
+        }
+
+    }
+}

@@ -11,9 +11,7 @@
         margin: auto;
         text-align: center;
         h1{
-            font-size: 74px;
-            line-height: 86px;
-            color:$white;
+            @include h1;
         }
         .banner_p{
             font-size: 20px;

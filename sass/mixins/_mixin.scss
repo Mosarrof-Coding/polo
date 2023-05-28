@@ -1,0 +1,14 @@
+@mixin h1{
+    font-size: 74px;
+    line-height: 86px;
+    color:$white;
+}
+@mixin p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: $dark_777;
+}

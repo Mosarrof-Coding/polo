@@ -90,4 +90,32 @@ ul {
 #banner .banner_title .banner_p {
   font-size: 20px;
   color: #fff;
+}
+
+#layout {
+  padding: 100px 0;
+}
+#layout .layout_heading {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#layout .layout_heading h1 {
+  font-size: 74px;
+  line-height: 86px;
+  color: #fff;
+  color: #2250FC;
+}
+#layout .layout_heading p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: #777;
+}
+#layout .layout_gallery .layout_items .layout_text {
+  padding: 20px 0;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
