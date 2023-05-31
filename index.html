@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>polo multipurpose template</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section id="header">
         <header>
-            header
         </header>
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand melogo" href="#">polo</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,14 +55,31 @@
             </div>
         </nav>
     </section>
-
     <section id="banner">
-      <div class="container">
-        <div class="banner_title">
-          <h1>Powerful, Lightweight <br> and Beautiful</h1>
-          <span class="banner_p">
-            220+ Layout Demos . 700+ Multi-Page & One-Page Templates . Reusable Elements . Lightweight . Easy to Customize . 1000+ UI Features . Bootstrap 5 . Free Lifetime Updates . Slider Revolution with Visual Editor included
-          </span>
+      <div class="ban_vidslider">
+        <div class="banItm">
+          <video controls preload="auto" muted="true" loop="false" autoplay ='true'>
+            <source src="./assets/video/pexels-waves.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="banItm">
+          <img class="w-100" src="./assets/images/banner.jpg" alt="banner">
+        </div>
+      </div>
+      <button class="me-prev3">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="me-next4">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="bannerOverlay">
+        <div class="container">
+          <div class="banner_title">
+            <h1>Powerful, Lightweight <br> and Beautiful</h1>
+            <span class="banner_p">
+              220+ Layout Demos . 700+ Multi-Page & One-Page Templates . Reusable Elements . Lightweight . Easy to Customize . 1000+ UI Features . Bootstrap 5 . Free Lifetime Updates . Slider Revolution with Visual Editor included
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -91,5 +107,95 @@
         </div>
       </div>
     </section>
+
+    <section id="recent_work">
+      <div class="container">
+        <div class="work_heading">
+          <h1>Recent Work</h1>
+          <p>
+            Lorem ipsum dolor sit amet, coper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.
+          </p>
+        </div>
+      </div>
+      <div class="work_gallery">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <div class="work_items">
+              <div class="w-items-slide">
+                <div class="w-slide-inner">
+                  <div class="W-slide_img">
+                    <img class="w-100 img-fluid" src="./assets/images/workimg(1).jpg" alt="w-image">
+                  </div>
+                  <div class="W-slide_img">
+                    <img class="w-100 img-fluid" src="./assets/images/workimg(3).jpg" alt="w-image">
+                  </div>
+                </div>
+                <button class="me-prev">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="me-next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(4).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(5).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(6).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(7).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(8).jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <div class="w-items-slide">
+                <div class="w-slide-inner1">
+                  <div class="W-slide_img">
+                    <img class="w-100 img-fluid" src="./assets/images/workimg(11).jpg" alt="w-image">
+                  </div>
+                  <div class="W-slide_img">
+                    <img class="w-100 img-fluid" src="./assets/images/workimg(12).jpg" alt="w-image">
+                  </div>
+                </div>
+                <button class="me-prev1">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="me-next2">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="work_items">
+              <img class="w-100" src="./assets/images/workimg(10).jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <script src="./js/code.jquery.com_jquery-1.12.4.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

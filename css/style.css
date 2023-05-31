@@ -19,8 +19,19 @@ ul {
   list-style-type: none;
 }
 
+#header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+#header header {
+  background-color: transparent;
+}
 #header nav {
   padding: 0 16px;
+  background-color: rgba(108, 117, 125, 0.5607843137);
 }
 #header nav .melogo {
   font-family: "Poppins", sans-serif;
@@ -71,23 +82,74 @@ ul {
 }
 
 #banner {
-  background-image: url(../assets/images/bg-v4_new.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
 }
-#banner .banner_title {
+#banner .ban_vidslider .banItm {
+  width: 100%;
+}
+#banner .ban_vidslider .banItm video {
+  width: 100%;
+}
+#banner .me-prev3 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#banner .me-prev3:hover {
+  background-color: #738be4;
+}
+#banner .me-prev3:hover i {
+  color: #fff;
+}
+#banner .me-next4 {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#banner .me-next4:hover {
+  background-color: #738be4;
+}
+#banner .me-next4:hover i {
+  color: #fff;
+}
+#banner .bannerOverlay {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+}
+#banner .bannerOverlay .banner_title {
   max-width: 85%;
-  padding: 170px 0;
   margin: auto;
   text-align: center;
 }
-#banner .banner_title h1 {
+#banner .bannerOverlay .banner_title h1 {
   font-size: 74px;
   line-height: 86px;
   color: #fff;
+  box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 0.2), 8px 8px 16px rgba(100, 100, 100, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.6);
 }
-#banner .banner_title .banner_p {
+#banner .bannerOverlay .banner_title .banner_p {
   font-size: 20px;
   color: #fff;
 }
@@ -118,4 +180,111 @@ ul {
 #layout .layout_gallery .layout_items .layout_text {
   padding: 20px 0;
   text-align: center;
+}
+
+#recent_work .work_heading h1 {
+  font-size: 74px;
+  line-height: 86px;
+  color: #fff;
+  color: #000;
+  position: relative;
+}
+#recent_work .work_heading h1::after {
+  width: 250px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+}
+#recent_work .work_heading p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: #777;
+  margin-top: 30px;
+}
+#recent_work .work_gallery .work_items {
+  position: relative;
+}
+#recent_work .work_gallery .work_items .me-prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#recent_work .work_gallery .work_items .me-prev:hover {
+  background-color: #738be4;
+}
+#recent_work .work_gallery .work_items .me-prev:hover i {
+  color: #fff;
+}
+#recent_work .work_gallery .work_items .me-next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#recent_work .work_gallery .work_items .me-next:hover {
+  background-color: #738be4;
+}
+#recent_work .work_gallery .work_items .me-next:hover i {
+  color: #fff;
+}
+#recent_work .work_gallery .work_items .me-prev1 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#recent_work .work_gallery .work_items .me-prev1:hover {
+  background-color: #738be4;
+}
+#recent_work .work_gallery .work_items .me-prev1:hover i {
+  color: #fff;
+}
+#recent_work .work_gallery .work_items .me-next2 {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border-radius: 50%;
+}
+#recent_work .work_gallery .work_items .me-next2:hover {
+  background-color: #738be4;
+}
+#recent_work .work_gallery .work_items .me-next2:hover i {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

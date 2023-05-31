@@ -1,0 +1,110 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+#recent_work{
+    .work_heading{
+        h1{
+            @include h1;
+            color:$dark000;
+            position: relative;
+            &::after{
+                width: 250px;
+                height: 1px;
+                background-color: $dark000;
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                display: inline-block
+            }
+        }
+        p{
+            @include p;
+            margin-top: 30px;
+        }
+    }
+    .work_gallery{
+        .work_items{
+            position: relative;
+            .w-items-slide{
+                .w-slide-inner{
+                }
+            }
+            .me-prev{
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 90;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                background: $white;
+                border-radius: 50%;
+                &:hover{
+                    background-color: $green1;
+                    i{
+                        color:$white;
+                    }
+                }
+            }
+            .me-next{
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 90;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                background: $white;
+                border-radius: 50%;
+                &:hover{
+                    background-color: $green1;
+                    i{
+                        color:$white;
+                    }
+                }
+            }
+            .me-prev1{
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 90;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                background: $white;
+                border-radius: 50%;
+                &:hover{
+                    background-color: $green1;
+                    i{
+                        color:$white;
+                    }
+                }
+            }
+            .me-next2{
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 90;
+                width: 40px;
+                height: 40px;
+                display: grid;
+                place-items: center;
+                background: $white;
+                border-radius: 50%;
+                &:hover{
+                    background-color: $green1;
+                    i{
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}

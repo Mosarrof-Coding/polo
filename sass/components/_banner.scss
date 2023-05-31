@@ -1,21 +1,74 @@
 @import "../mixins/mixin";
 @import "../variable/variable";
 #banner{
-    background-image: url(../assets/images/bg-v4_new.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .banner_title{
-        max-width: 85%;
-        padding: 170px 0;
-        margin: auto;
-        text-align: center;
-        h1{
-            @include h1;
+    position: relative;
+    .ban_vidslider{
+        .banItm{
+            width: 100%;
+            video{
+                width: 100%;
+            }
         }
-        .banner_p{
-            font-size: 20px;
-            color:$white;
+    }
+    .me-prev3{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 90;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        background: $white;
+        border-radius: 50%;
+        &:hover{
+            background-color: $green1;
+            i{
+                color:$white;
+            }
+        }
+    }
+    .me-next4{
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 90;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        background: $white;
+        border-radius: 50%;
+        &:hover{
+            background-color: $green1;
+            i{
+                color:$white;
+            }
+        }
+    }
+    .bannerOverlay{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        place-items: center;
+        .banner_title{
+            max-width: 85%;
+            margin: auto;
+            text-align: center;
+            h1{
+                @include h1;
+                box-shadow: inset 0 0 5px 4px rgba(255,255,255,.2),8px 8px 16px rgba(100,100,100,.1),  -8px -8px 16px rgba(255,255,255,.6);
+            }
+            .banner_p{
+                font-size: 20px;
+                color:$white;
+            }
         }
     }
 }
