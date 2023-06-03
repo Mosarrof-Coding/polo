@@ -1,0 +1,150 @@
+@import "../variable/variable";
+@import "../mixins/mixin";
+#asNavfor{
+    background: url(../assets/images/asnavbg.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    z-index: -100;
+    .slider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:5%;
+        width: 100%;
+        .mainslider{
+            width: 40%;
+            padding: 50px;
+            position: relative;
+            .item-slider{
+                width: 100%;
+                z-index: 2;
+                background: #fff;
+                border-radius: 45%;
+                overflow: hidden;
+                .items{
+                    img{
+                        width: 100%;
+                    }
+                    h1{
+                        font-size: 36px;
+                        line-height: 1.32;
+                        margin: 0 0;
+                        letter-spacing: -1px;
+                        text-transform: capitalize;
+                        color:#fff;
+                    }
+                    p{
+                        font-size: 18px;
+                        color:#fff;
+                    }
+                }
+            }
+            .star{
+                position: absolute;
+                left: 13%;
+                bottom: 13%;
+                z-index: 2;
+                animation: wheel 150s linear infinite;
+                img{
+                    width: auto;
+                }
+            }
+            @keyframes wheel {
+                0%{
+                    transform: rotate(0);
+                }
+                100%{
+                    transform: rotate(10000deg);
+                }
+            }
+            .gear{
+                position: absolute;
+                top: 9%;
+                left: 10%;            
+                z-index: 1;
+                img{
+                    width: auto;
+                }
+            }
+            .line{
+                position: absolute;
+                left: 75%;
+                top: 10%;
+                img{
+                    width: auto;
+                }
+            }
+        }
+        .mainslider1{
+            width: 55%;
+            .text-slider{
+                width: 100%;
+                .items{
+                    width: 100%;
+                    margin: 0 10px;
+                    h1{
+                        font-size: 36px;
+                        line-height: 1.32;
+                        margin: 0 0;
+                        letter-spacing: -1px;
+                        text-transform: capitalize;
+                        color:#fff;
+                        padding-bottom: 30px;
+                    }
+                    img{
+                        width: 40px;
+                    }
+                    p{
+                        font-size: 18px;
+                        color:#fff;
+                        padding: 20px 0;
+                        border-bottom: 1px solid #fff;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            left: 2%;
+                            bottom: -3.5px;
+                            content: "";
+                            background: pink;
+                            width: 70px;
+                            height: 6px;
+                            border-radius: 3px;
+                        }
+                    }
+                    .ddesig{
+                        padding: 10px 0;
+                        h3{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color:#fff;
+                            text-transform: capitalize;
+                        }
+                        h4{
+                            font-size: 16px;
+                            font-weight: 400;
+                            color:#cdf2fe;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+            .asnavbtn{
+                display: inline-flex;
+                gap:10px;
+                i{
+                    width: 60px;
+                    height: 40px;
+                    background: $green1;
+                    border-radius: 5px;
+                    display: grid;
+                    place-items: center;
+                    color:#fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}

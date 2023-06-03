@@ -25,8 +25,13 @@
     .work_gallery{
         .work_items{
             position: relative;
+            overflow: hidden;
+            cursor: pointer;
             .w-items-slide{
                 .w-slide-inner{
+                    .W-slide_img{
+                        width: 100%;
+                    }
                 }
             }
             .me-prev{
@@ -103,6 +108,30 @@
                     i{
                         color:$white;
                     }
+                }
+            }
+            &::after{
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: #000000a4 url(../assets/images/hoverImg.webp);
+                background-repeat: repeat;
+                transform: scale(2);
+                opacity: 0;
+                visibility: hidden;
+                z-index: 2;
+                pointer-events: none;
+                touch-action: none;
+                transition: all 0.3s linear 0s;
+            }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
                 }
             }
         }
